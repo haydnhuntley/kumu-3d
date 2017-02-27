@@ -1,6 +1,6 @@
 # kumu-3d
 
-## Kumu-3D Printer
+## The Kumu-3D Printer
 
 ### *Kumu* is Hawaiian for *teacher*.
 
@@ -17,6 +17,7 @@ The Kumu-3D's features are:
 * 32-bit Smoothieware controller from AZSMZ, with LCD display.
 * Carbon fiber, zero-backlash magnetically jointed arms.
 * 0.9&deg; motors, 1/32 stepping, 16-tooth pulleys yield 400 steps/mm with a worst case real resolution of 20&micro;m and a average resolution of about one-third of that.
+* Dampers for silent operation.
 * 2020 extrusions with diagonal bracing for increased stiffness.
 * Integrated spool holder with bearings on top.
 * Build cost around $600 in quantity one, including US shipping.
