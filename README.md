@@ -2,9 +2,9 @@
 
 ## The Kumu-3D Printer
 
-### *Kumu* is Hawaiian for *teacher*.
+### *Kumu* means *teacher* in the Hawaiian language.
 
-We wish to thank Johann C. Rocholl for his groundbreaking work on the Rostock and Kossel 3D Printers. This design was derived from his work and that of many other innovators.
+I wish to thank Johann C. Rocholl for his groundbreaking work on the Rostock and Kossel 3D Printers. This design was derived from his work and that of many other innovators.
 
 The Kumu-3D is a Delta printer improving on the [Kossel Plus](http://www.kosselplus.com "Kossel Plus"), which I designed to extend and improve on Johann's original [Kossel](http://reprap.org/wiki/Kossel "Kossel").
 
@@ -24,6 +24,7 @@ The Kumu-3D's features are:
 * With the standard 750mm vertical extrusions, it should yield a maximum Z over 250mm.  With 1000mm vertical extrusions, it should yield a build height of over 500mm.
 
 Here is the GoogleDocs spreadsheet containing the [Bill of Materials](https://docs.google.com/spreadsheets/d/1ovnhxit7gjctnHXA3ArEihpogoxfmhG4zKcSKq6PfBs/edit?usp=sharing).
+
 I still need to add the individual counts for some of the nuts and screws.
 
 This isn't an average printer, this is an **extraordinary** one.
