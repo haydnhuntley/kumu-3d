@@ -9,8 +9,9 @@
 
 
 include <configuration.scad>;
-extraClearance         =  0.3;
+extraClearance         =   0.3;
 grooveRadius           =   0.6;
+crossPieceOffset       = -43;
 
 
 function fnX(d, offset=0) = d * sin(30) - offset;

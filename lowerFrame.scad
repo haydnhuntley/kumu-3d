@@ -21,7 +21,6 @@ include <Orbitron_Medium.scad>
 // All measurements in mm.
 debug = false;
 height = 3 * extrusionWidth;
-crossPieceOffset       = -43;
 
 
 // Draw the vertical extrusion.
@@ -38,10 +37,6 @@ if (debug)
 			rotate([0, 0, a*30])
 			translate([-extrusionWidth/2, -2-4*extrusionWidth, 0])
 			%cube([extrusionWidth, 4*extrusionWidth, extrusionWidth]);
-
-
-function fnX(d, offset=0) = d * sin(30) - offset;
-function fnY(d, offset=0) = d * cos(30) - offset;
 
 
 module lowerFrame()
