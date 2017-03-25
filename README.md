@@ -31,11 +31,11 @@ This isn't an average printer, this is an **extraordinary** one.
 
 I am creating this project for students at Maui College and hope it is useful to enthusiasts everywhere!  :-)
 
-Here is a link to the extruder (designed by Shane Beeder):  [ArmDrive Bowden Extruder] (http://www.thingiverse.com/thing:245677)
+Here is a link to the extruder (designed by Shane Beeder):  [ArmDrive Bowden Extruder](http://www.thingiverse.com/thing:245677)
 I use the version for the Mk8 drive gear and the alternative arm which uses a 4mm nut to secure the PTFE tubing.
 
 Here is a link to the AZSMZ's LCD display holder (designed by Rick Yang):  [
-LCD mount for AZSMZ 12864 with TF slot] (http://www.thingiverse.com/thing:1610241)
+LCD mount for AZSMZ 12864 with TF slot](http://www.thingiverse.com/thing:1610241)
 
 ***
 
