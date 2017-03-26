@@ -7,7 +7,7 @@
 // Haydn Huntley
 // haydn.huntley@gmail.com
 
-// 30% infill is sufficient, weighs 138g.
+// 30% infill is sufficient, weighs 128g.
 
 
 $fn = 360/24;
