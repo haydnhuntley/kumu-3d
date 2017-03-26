@@ -9,9 +9,6 @@
 
 // 30% infill is sufficient.
 
-// 8.6mm for idler
-// 7mm cone
-
 $fn = 360/24;
 
 include <configuration.scad>;
@@ -100,17 +97,66 @@ module upperFrame()
 		rotate([180, 0, 0])
 		cylinder(r1=m3LooseRadius, r2=m3Radius-0.2, h=35+1, $fn=36);
 	}
+
+	// Add a piece to hold a microswitch.
+	difference()
+	{
+		intersection()
+		{
+			translate([0, -10/2-5, 14/2+height])
+			cube([20, 14, 14], true);
+			
+			translate([0, -23, height])
+			scale([0.50, 1, 1])
+			cylinder(r=20, h=14, $fn=72);
+		}
+	
+		// Show where the microswitch will go.
+		translate([0, -6.3/2-17, 10.6/2+height+6])
+		%cube([20, 6.3, 10.6], true);
+
+		// Carve out tapered holes for the microswitch's M2.5x12 screws.
+		for (x = [1, -1])
+			translate([x*9.5/2, -17-6.3, height+6+3])
+			rotate([-90, 0, 0])
+			cylinder(r1=(2.5+0.4)/2, r2=2.5/2, h=12+4, $fn=12);
+
+		// Carve space for the vertical extrusion.
+		translate([0, 0, extrusionWidth])
+		rotate([0, 0, 45])
+		cube([extrusionWidth+extraClearance,
+			  extrusionWidth+extraClearance,
+			  2*extrusionWidth],
+			  true);
+		
+		// Remove a vertical groove to make the inside corner sharp.
+		rotate([0, 0, 45+180])
+		translate([extrusionWidth/2, extrusionWidth/2, -smidge/2])
+		cylinder(r=grooveRadius, h=2*extrusionWidth, $fn=8);
+	}
 }
 
 
-upperFrame();
+difference()
+{
+	upperFrame();
+	
+	// Make wiring tunnels for the microswitch.
+	for (x = [1, -1])
+	{
+		rotate([25, 0, 0])
+		translate([x*8, -7.5, -1])
+		cylinder(r=1.5, h=height+15, $fn=12);
+	}
+}
 
 // Draw the motor, offset by the dampener.
 //translate([0, crossPieceOffset-30-dampenerOffset, (height-43)/2+43/2])
 //rotate([0, 0, 90])
 //%nema17Motor();
 
-// Draw the idler bearing.
+// Draw the idler bearing, which is composed of two 623ZZ flanged bearings with
+// an M3 washer separating them.  Together they are 8.6mm in width.
 translate([0, crossPieceOffset+13, height/2])
 %rotate([90, 0, 0])
 {
@@ -119,4 +165,11 @@ translate([0, crossPieceOffset+13, height/2])
 	cylinder(r=10/2, h=h);
 	translate([0, 0, h-1])
 	cylinder(r=12/2, h=1);
+}
+
+// Show where the carriage will go.
+if (debug)
+{
+	translate([0, -22, 62])
+	%cube([50, 10, 50], true);
 }
