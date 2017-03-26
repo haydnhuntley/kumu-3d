@@ -10,7 +10,7 @@
 
 include <configuration.scad>;
 extraClearance         =   0.3;
-grooveRadius           =   0.6;
+grooveRadius           =   0.7;
 crossPieceOffset       = -43;
 
 

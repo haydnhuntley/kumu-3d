@@ -61,7 +61,7 @@ module upperFrame()
 
 					// The part of the cone which attaches to the crosspiece.
 					translate([0,
-							   crossPieceOffset+dampenerOffset-1.6,
+							   crossPieceOffset+dampenerOffset-1.6-smidge,
 							   height/2])
 					rotate([90, 0, 0])
 					cylinder(r1=7/2, r2=19.4/2, h=6.2, $fn=90);
@@ -146,7 +146,7 @@ difference()
 	{
 		rotate([25, 0, 0])
 		translate([x*8, -7.5, -1])
-		cylinder(r=1.5, h=height+15, $fn=12);
+		cylinder(r=4/2, h=height+15, $fn=12);
 	}
 }
 
