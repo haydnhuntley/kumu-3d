@@ -24,8 +24,9 @@ The Kumu-3D's features are:
 * With the standard 750mm vertical extrusions and 304mm arms, it should yield a maximum Z over 250mm and diameter slightly over 250mm.  With 1000mm vertical extrusions and 360mm arms, it should yield a build height of over 500mm and diameter up to 300mm.
 
 Here is the GoogleDocs spreadsheet containing the [Bill of Materials](https://docs.google.com/spreadsheets/d/1ovnhxit7gjctnHXA3ArEihpogoxfmhG4zKcSKq6PfBs/edit?usp=sharing).
+I still need to add the individual counts for the nuts, bolts and screws.
 
-I still need to add the individual counts for some of the nuts and screws.
+Note: this is a *Work-in-Progress*, but I plan to have the prototype finalized by the end of April 2017, so that it is ready with plenty of time to spare for the start of the summer class in June 2017.
 
 This isn't an average printer, this is an **extraordinary** one.
 
