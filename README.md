@@ -23,16 +23,16 @@ The Kumu-3D's features are:
 * Build cost around $600 in quantity one, including US shipping.
 * With the standard 750mm vertical extrusions and 304mm arms, it should yield a maximum Z over 250mm and diameter slightly over 250mm.  With 1000mm vertical extrusions and 360mm arms, it should yield a build height of over 500mm and diameter up to 300mm.
 
-Here is the GoogleDocs spreadsheet containing the [Bill of Materials](https://docs.google.com/spreadsheets/d/1ovnhxit7gjctnHXA3ArEihpogoxfmhG4zKcSKq6PfBs/edit?usp=sharing).
-I still need to add the individual counts for the nuts, bolts and screws.
+Here is the GoogleDocs spreadsheet containing the [Bill of Materials](https://docs.google.com/spreadsheets/d/1ovnhxit7gjctnHXA3ArEihpogoxfmhG4zKcSKq6PfBs/edit?usp=sharing).  
+I still need to add detailed individual counts for the nuts and screws.
 
-Note: this is a *Work-in-Progress*, but I plan to have the prototype finalized by the end of April 2017, so that it is ready with plenty of time to spare for the start of the summer class in June 2017.
+Note: this is a *Work-in-Progress*, but I plan to have the prototype finalized by the end of April 2017, so it is ready for the start of the summer class in June 2017. Right now I'm waiting on parts to arrive.
 
 This isn't an average printer, this is an **extraordinary** one.
 
 I am creating this project for students at Maui College and hope it is useful to enthusiasts everywhere!  :-)
 
-Here is a link to the extruder (designed by Shane Beeder):  [ArmDrive Bowden Extruder](http://www.thingiverse.com/thing:245677)
+Here is a link to the extruder (designed by Shane Beeder):  [ArmDrive Bowden Extruder](http://www.thingiverse.com/thing:245677)  
 I use the version for the Mk8 drive gear and the alternative arm which uses a 4mm nut to secure the PTFE tubing.
 
 Here is a link to the AZSMZ's LCD display holder (designed by Rick Yang):  [
