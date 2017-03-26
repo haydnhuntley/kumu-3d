@@ -10,7 +10,8 @@ include $(wildcard *.deps)
 all: copperPipeBearingHolder.stl \
 	 copperPipeSpoolHolder.stl   \
 	 lowerFrame.stl \
-	 upperFrame.stl
+	 upperFrame.stl \
+	 e3dWedge.stl
 
 .PHONY: clean
 
