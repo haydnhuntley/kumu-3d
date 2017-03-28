@@ -7,10 +7,13 @@ include $(wildcard *.deps)
 
 .PHONY: all
 
-all: copperPipeBearingHolder.stl \
+all: lowerFrame.stl              \
+	 upperFrame.stl              \
+	 carriage.stl				 \
+	 glassHolder.stl			 \
+	 azsmzPlate.stl			     \
+	 copperPipeBearingHolder.stl \
 	 copperPipeSpoolHolder.stl   \
-	 lowerFrame.stl \
-	 upperFrame.stl \
 	 e3dWedge.stl
 
 .PHONY: clean

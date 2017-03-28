@@ -7,7 +7,7 @@
 // Haydn Huntley
 // haydn.huntley@gmail.com
 
-// 30% infill is sufficient, weighs 128g.
+// 30% infill is sufficient, weighs ~128g.
 
 
 $fn = 360/24;
@@ -45,7 +45,7 @@ module lowerFrame()
 	{
 		vertex(height);
 		
-		// Remove eight M5x10 holes to attach the four horizontal extrusions.
+		// Remove eight M5x12 holes to attach the four horizontal extrusions.
 		for (z = [extrusionWidth/2, height-extrusionWidth/2])
 			for (x = [1, -1])
 				for (d = [35, 70])
@@ -81,36 +81,23 @@ module lowerFrame()
 			rotate([90, 0, 0])
 			translate([nema17ScrewSpacing/2, nema17ScrewSpacing/2, 0])
 			{
+				// M3x8 shaft
 				cylinder(r=m3LooseRadius, h=7, $fn=24);
-				translate([0, 0, -1.5])
+				// M3x8 head
+				translate([0, 0, -1.55])
 				cylinder(r=m3LooseHeadRadius, h=m3HeadHeight, $fn=24);
 
 				// Tunnels for reaching the M3x8 screws.
-				angle1  = 26;
-				offset1 = 10;
+				angle1 = 4;
 				if (a == 0 || a == 2)
 				{
-					hull()
-					{
-						rotate([180+angle1, 0, 0])
-						cylinder(r=3/2, h=70, $fn=12);
-
-						translate([0, offset1, 0])
-						rotate([180+angle1, 0, 0])
-						cylinder(r=3/2, h=70, $fn=12);
-					}
+					rotate([180+angle1, 0, 0])
+					cylinder(r=4/2, h=70, $fn=12);
 				}
 				if (a == 1 || a == 3)
 				{
-					hull()
-					{
-						rotate([180, -angle1, 0])
-						cylinder(r=3/2, h=70, $fn=12);
-		
-						translate([offset1, 0, 0])
-						rotate([180, -angle1, 0])
-						cylinder(r=3/2, h=70, $fn=12);
-					}
+					rotate([180, -angle1, 0])
+					cylinder(r=4/2, h=70, $fn=12);
 				}
 			}
 
