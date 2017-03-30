@@ -12,6 +12,7 @@ all: lowerFrame.stl              \
 	 carriage.stl				 \
 	 glassHolder.stl			 \
 	 azsmzPlate.stl			     \
+	 aBracingPost.stl            \
 	 copperPipeBearingHolder.stl \
 	 copperPipeSpoolHolder.stl   \
 	 e3dWedge.stl
