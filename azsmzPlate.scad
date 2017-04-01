@@ -86,7 +86,7 @@ module m3x6(pos)
 {
 	// These holes need to be slightly tight.
 	translate([pos[0], pos[1], -smidge/2])
-	cylinder(r1=m3Radius, r2=m3LooseRadius, h=pillarHeight+smidge);
+	cylinder(r1=m3Radius-smidge, r2=m3LooseRadius, h=pillarHeight+smidge);
 }
 
 

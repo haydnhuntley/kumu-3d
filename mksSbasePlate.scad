@@ -7,7 +7,6 @@
 // Louis Dionne
 // louis.dionne@gmail.com
 
-
 $fn=360/6;
 
 include <configuration.scad>;
@@ -23,7 +22,7 @@ pillarHeight		=   7 - zPcBoard;
 edgeWidth           =  15;
 outsideEdge         =   5;
 
-// AZSMZ holes.
+// MKS SBASE holes.
 upperLeft  = [      4, ySize-4];
 upperRight = [xSize-4, ySize-4];
 lowerLeft  = [     4, 4];
@@ -94,7 +93,7 @@ module m3x6(pos)
 {
 	// These holes need to be slightly tight.
 	translate([pos[0], pos[1], -smidge/2])
-	cylinder(r1=m3Radius, r2=m3LooseRadius, h=pillarHeight+smidge);
+    cylinder(r1=m3Radius-smidge, r2=m3Radius, h=pillarHeight+smidge);
 }
 
 

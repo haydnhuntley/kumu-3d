@@ -22,7 +22,7 @@ pillarHeight		=   7 - zPcBoard;
 edgeWidth           =  15;
 outsideEdge         =   5;
 
-// AZSMZ holes.
+// Smoothieboard holes.
 upperLeft  = [      2.5, ySize-3];
 upperRight = [xSize-28, ySize-3];
 lowerLeft  = [     9, 8.5];
@@ -70,7 +70,7 @@ module smoothieboardPlate()
 		translate([xSize/2, ySize/2, zSize/2])
 		translate([0, 5, 0])
 		roundedBox([xSize-edgeWidth,
-					ySize-edgeWidth - 5,
+					ySize-edgeWidth - 8,
 					zSize+smidge],
 				   5, true);
 				   
@@ -93,7 +93,7 @@ module m3x6(pos)
 {
 	// These holes need to be slightly tight.
 	translate([pos[0], pos[1], -smidge/2])
-	cylinder(r1=m3Radius, r2=m3LooseRadius, h=pillarHeight+smidge);
+    cylinder(r1=m3Radius-smidge, r2=m3Radius, h=pillarHeight+smidge);
 }
 
 
