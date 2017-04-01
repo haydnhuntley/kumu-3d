@@ -1,5 +1,7 @@
 // This implements the basic shape for the vertex.
 //
+// DO NOT SLICE THIS.
+//
 // This work is licensed under a Creative Commons Attribution-ShareAlike 4.0
 // International License.
 // Visit:  http://creativecommons.org/licenses/by-sa/4.0/
@@ -18,7 +20,7 @@ function fnX(d, offset=0) = d * sin(30) - offset;
 function fnY(d, offset=0) = d * cos(30) - offset;
 
 
-module vertex(height=60)
+module vertex(height)
 {
 	// This draws the core shape used at the three corners with the given
 	// height.
@@ -67,15 +69,15 @@ module vertex(height=60)
 		// Remove interior space for the pulleys.
 		hull()
 			for (x = [1, -1])
-				for (d = [23, 40])
-					translate([x*fnX(d, 5), -fnY(d, -5), -smidge/2])
+				for (d = [23, 41.2])
+					translate([x*fnX(d, 3.5), -fnY(d, -4), -smidge/2])
 					cylinder(r=5, h=height+smidge, $fn=24);
 
 		// Remove exterior space for the motor.
 		hull()
 			for (x = [1, -1])
 				for (d = [57, 100])
-					translate([x*fnX(d, 5), -fnY(d, -5), -smidge/2])
+					translate([x*fnX(d, 3.5), -fnY(d, -4), -smidge/2])
 					cylinder(r=5, h=height+smidge, $fn=24);
 
 		// Remove two vertical grooves to make the inside corners sharp.

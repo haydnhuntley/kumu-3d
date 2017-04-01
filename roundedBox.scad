@@ -1,3 +1,8 @@
+// This file implements roundedBox().
+//
+// DO NOT SLICE THIS.
+
+
 // size is a vector [x, y, z], always draws from center!
 module roundedBox(size, radius=5, sidesonly=true)
 {

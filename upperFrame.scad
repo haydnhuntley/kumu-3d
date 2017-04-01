@@ -14,7 +14,6 @@ $fn = 360/24;
 include <configuration.scad>;
 include <motor.scad>;
 include <vertex.scad>;
-include <Orbitron_Medium.scad>
 
 
 // All measurements in mm.
@@ -74,21 +73,21 @@ module upperFrame()
 			for (d = [35, 70])
 				translate([x*fnX(d), -fnY(d), height/2])
 				rotate([90, 0, x*120])
-				translate([0, 0, -2])
-				cylinder(r=m5LooseRadius, h=7, $fn=24);
+				translate([0, 0, -0.2])
+				cylinder(r=m5LooseRadius, h=5, $fn=24);
 
-		// Remove two M5x12 holes to attach the vertical extrusion.
+		// Remove two M5x10 holes to attach the vertical extrusion.
 		for (x = [1, -1])
 			for (a = [0, 1])
 				rotate([0, 0, 45+a*90])
 				translate([extrusionWidth/2, 0, height/2])
 				rotate([0, 90, 0])
 				{
-					cylinder(r=m5LooseRadius, h=7, $fn=24);
-					translate([0, 0, 7-smidge])
+					cylinder(r=m5LooseRadius, h=5, $fn=24);
+					translate([0, 0, 5-smidge])
 					cylinder(r1=m5LowProfileHeadRadius,
 							 r2=1.5+m5LowProfileHeadRadius,
-							 h=7, $fn=24);
+							 h=9, $fn=24);
 				}
 
 		// Remove a hole for an M3x25 for the idler shaft.

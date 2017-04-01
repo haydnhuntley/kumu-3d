@@ -1,5 +1,7 @@
 // A NEMA17 sized motor.
 //
+// DO NOT SLICE THIS.
+//
 // This work is licensed under a Creative Commons Attribution-ShareAlike 4.0
 // International License.
 // Visit:  http://creativecommons.org/licenses/by-sa/4.0/

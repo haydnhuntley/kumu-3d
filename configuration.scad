@@ -36,3 +36,6 @@ m5LowProfileHeadHeight = 1.5 + 0.5;
 m5x8Height        = 8;        // For M5x8
 m5LooseNutRadius  = (8.9 + 0.4) / 2;
 m5NutHeight       = (4.9 + 0.3);
+
+
+lowerFrameHeight = 3 * extrusionWidth + 12;
