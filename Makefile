@@ -12,7 +12,10 @@ all: lowerFrame.stl              \
 	 carriage.stl				 \
 	 glassHolder.stl			 \
 	 azsmzPlate.stl			     \
+	 smoothieboardPlate.stl		 \
+	 mksSbasePlate.stl			 \
 	 aBracingPost.stl            \
+	 fusePlugHolder.stl			 \
 	 copperPipeBearingHolder.stl \
 	 copperPipeSpoolHolder.stl   \
 	 e3dWedge.stl
