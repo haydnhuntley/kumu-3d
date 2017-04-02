@@ -54,9 +54,9 @@ module upperFrame()
 				union()
 				{
 					// The part of the cone which is away from the crosspiece.
-					translate([0, -19.9, height/2])
+					translate([0, -18.9, height/2])
 					rotate([90, 0, 0])
-					cylinder(r1=27.2/2, r2=7/2, h=10.1, $fn=90);
+					cylinder(r1=27.2/2, r2=7/2, h=11.1, $fn=90);
 
 					// The part of the cone which attaches to the crosspiece.
 					translate([0,
