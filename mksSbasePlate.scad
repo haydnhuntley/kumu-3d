@@ -29,7 +29,7 @@ lowerLeft  = [     4, 4];
 lowerRight = [xSize-4, 4];
 
 
-module sbasePlate()
+module mksSbasePlate()
 {
 	difference()
 	{
@@ -60,7 +60,7 @@ module sbasePlate()
 			addPillar(lowerRight);
 		}
 
-		// Make two M3x8 screw holes in the two tabs.
+		// Make two M5x8 screw holes in the two tabs.
 		translate([-extrusionWidth/2, extrusionWidth/2-2.5, 0])
 		m5x8();
 		translate([xSize+extrusionWidth/2, extrusionWidth/2-2.5, 0])
@@ -105,4 +105,4 @@ module m5x8()
 }
 
 
-sbasePlate();
+mksSbasePlate();
