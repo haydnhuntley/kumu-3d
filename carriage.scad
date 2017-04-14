@@ -20,7 +20,7 @@
 // 3  of the above V- or W-wheels.
 // 2  of the above 1/4" spacers (or you could use 6mm).
 // 1  of the above 1/4" eccentric spacers (or you could use 6mm).
-// 3  M5x40 bolts.
+// 3  M5x35 bolts.
 // 1  large M5 washer for the top side of the eccentric spacer (optional).
 // 3  M5 nylock nuts to secure the three axles.
 // 2  3/8" ball studs.
@@ -117,7 +117,7 @@ module carriage()
 					20,
 					zBody+smidge], 5, true);
 
-		// Three holes for the M5x40 bolts for the axles for the rollers.
+		// Three holes for the M5x35 bolts for the axles for the rollers.
 		// Upper right.
 		translate([xAxleSpacing/2, yAxleSpacing/2, -smidge/2])
 		m5x40(zBody+smidge);
