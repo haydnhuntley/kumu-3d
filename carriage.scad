@@ -42,7 +42,7 @@ include <roundedBox.scad>;
 
 // All measurements in mm.
 m5Radius              = (5.0 + 0.3) / 2;
-eccentricSpacerRadius = (7.1 + 0.7)/2;
+eccentricSpacerRadius = (7.1 + 0.5)/2;
 ballJointSeparation   = 48.0;
 xAxleSpacing          = extrusionWidth * sqrt(2) + 19.1 - 0.35;
 yAxleSpacing          = 30.0;
@@ -107,7 +107,7 @@ module carriage()
 		}
 
 		// Place a hole in the center to lighten it.
-		translate([0, 7/2, zBody/2])
+		translate([0, -7/2, zBody/2])
 		roundedBox([xBody-4*7, yBody-3*7, zBody+smidge], 5, true);
 
 		// Gracefully remove material between the round-cornered rectangle
@@ -146,7 +146,7 @@ module carriage()
 
 		// A hole for the M3x20 vertical post, for the belt attachment.
 		translate([xInsideBeltOffset+singleBeltThickness/2,
-				   -yAxleSpacing/2,
+				   yAxleSpacing/2,
 				   -smidge/2])
 		{
 			m3x20(20);
@@ -188,7 +188,7 @@ module ballStud()
 	// The nut to hold it.
 	translate([0, 0, -m3NutHeight*5])
 	rotate([0, 0, 30])
-	cylinder(r1=m3NutRadius-0.1, r2=m3NutRadius+0.1, h=m3NutHeight*6, $fn=6);
+	cylinder(r1=m3NutRadius+0.1, r2=m3NutRadius-0.2, h=m3NutHeight*8, $fn=6);
 	
 	// The M10 hexagonal base.
 	hull()
