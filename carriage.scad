@@ -42,7 +42,7 @@ include <roundedBox.scad>;
 
 // All measurements in mm.
 m5Radius              = (5.0 + 0.3) / 2;
-eccentricSpacerRadius = (7.1 + 0.5)/2;
+eccentricSpacerRadius = (7.1 + 0.3)/2;
 ballJointSeparation   = 48.0;
 xAxleSpacing          = extrusionWidth * sqrt(2) + 19.1 - 0.35;
 yAxleSpacing          = 30.0;
@@ -66,7 +66,7 @@ gapBetweenCarriageAndExtrusion =  2;
 gapBetweenBeltAndExtrusion     = 17;
 aluminumSpacerRadius           = 10.0/2;
 aluminumSpacerHeight           = 0.25 * mmPerInch;
-spacerHeight = extrusionWidth * sin(45) + gapBetweenCarriageAndExtrusion - wheelWidth/2 - aluminumSpacerHeight;
+spacerHeight = extrusionWidth * sin(45) + gapBetweenCarriageAndExtrusion - wheelWidth/2 - aluminumSpacerHeight - 2.0;
 
 
 module carriage()
@@ -188,7 +188,7 @@ module ballStud()
 	// The nut to hold it.
 	translate([0, 0, -m3NutHeight*5])
 	rotate([0, 0, 30])
-	cylinder(r1=m3NutRadius+0.1, r2=m3NutRadius-0.2, h=m3NutHeight*8, $fn=6);
+	cylinder(r1=m3NutRadius+0.1, r2=m3NutRadius-0.2, h=m3NutHeight*7, $fn=6);
 	
 	// The M10 hexagonal base.
 	hull()
