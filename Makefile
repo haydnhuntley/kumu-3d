@@ -18,6 +18,7 @@ all: lowerFrame.stl              \
 	 fusePlugHolder.stl			 \
 	 copperPipeBearingHolder.stl \
 	 copperPipeSpoolHolder.stl   \
+     powerSupplyHolders.stl      \
 	 e3dWedge.stl
 
 .PHONY: clean
