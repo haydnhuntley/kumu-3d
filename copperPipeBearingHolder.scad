@@ -1,4 +1,4 @@
-// This works with a piece of 1/2" copper pipe, to provide more friction free
+// This works with a piece of 1/2" copper pipe, to provide nearly friction free
 // bearings for the spool.
 //
 // Uses 2 flanged 623ZZ bearings.
