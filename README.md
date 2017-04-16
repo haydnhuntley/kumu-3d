@@ -23,10 +23,13 @@ The Kumu-3D's features are:
 * Build cost around $600 in quantity one, including US shipping.
 * With the standard 750mm vertical extrusions and 304mm arms, it should yield a maximum Z over 250mm and diameter slightly over 250mm.  With 1000mm vertical extrusions and 360mm arms, it should yield a build height of over 500mm and diameter up to 300mm.
 
-Here is the GoogleDocs spreadsheet containing the [Bill of Materials](https://docs.google.com/spreadsheets/d/1ovnhxit7gjctnHXA3ArEihpogoxfmhG4zKcSKq6PfBs/edit?usp=sharing).  
-I still need to add detailed individual counts for the nuts and screws.
+Here is the GoogleDocs spreadsheet containing the [Bill of Materials](https://docs.google.com/spreadsheets/d/1ovnhxit7gjctnHXA3ArEihpogoxfmhG4zKcSKq6PfBs/edit?usp=sharing). 
+Here is a list of the fasteners required and where they are used: [Fasteners](https://docs.google.com/spreadsheets/d/1ovnhxit7gjctnHXA3ArEihpogoxfmhG4zKcSKq6PfBs/edit#gid=828928504)
 
-Note: this is a *Work-in-Progress*, but I plan to have the prototype finalized by the end of April 2017, so it is ready for the start of the summer class in June 2017. Right now I'm waiting on parts to arrive.
+Note: this is a *Work-in-Progress*, but I plan to have the prototype finalized by the end of April 2017, so it is ready for the start of the summer class in June 2017.
+So far the parts have arrived and I've assembled the frame.
+Next I'll wire up the electronics and install the bed.
+At this point it should be safe to print all of the parts which have been published, because I've tested them.
 
 This isn't an average printer, this is an **extraordinary** one.
 
@@ -34,13 +37,14 @@ I am creating this project for students at Maui College and hope it is useful to
 
 Here is a link to the extruder (designed by Shane Beeder):  [ArmDrive Bowden Extruder](http://www.thingiverse.com/thing:245677)  
 I use the version for the Mk8 drive gear and the alternative arm which uses a 4mm nut to secure the PTFE tubing.
+Note: print the two arm parts in ABS.
 
 Here is a link to the AZSMZ's LCD display holder (designed by Rick Yang):  [
 LCD mount for AZSMZ 12864 with TF slot](http://www.thingiverse.com/thing:1610241)
 
-***
-
-Here are some useful links for Markdown language:
+<!---
+Some useful links for Markdown language:
  * [Adam's Markdown Cheatsheet](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet)
  * [Laura's Markdown Cheatsheet](https://github.com/tchapi/markdown-cheatsheet/blob/master/README.md)
  * [Markdown Syntax Guide](https://confluence.atlassian.com/bitbucketserver/markdown-syntax-guide-776639995.html)
+--->
