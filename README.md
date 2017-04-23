@@ -28,8 +28,8 @@ Here is a list of the fasteners required and where they are used: [Fasteners](ht
 
 Note: this is a *Work-in-Progress*, but I plan to have the prototype finalized by the end of April 2017, so it is ready for the start of the summer class in June 2017.
 So far the parts have arrived and I've assembled the frame.
-Next I'll wire up the electronics and install the bed.
-At this point it should be safe to print all of the parts which have been published, because I've tested them.
+At this point it is safe to print all of the parts which have been published, because I've tested them.
+Next I'll wire up the electronics and install the bed and hotend.
 
 This isn't an average printer, this is an **extraordinary** one.
 
