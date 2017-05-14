@@ -21,15 +21,15 @@ The Kumu-3D's features are:
 * 2020 extrusions with diagonal bracing for increased stiffness.
 * Integrated spool holder with bearings on top.
 * Build cost around $600 in quantity one, including US shipping.
-* With the standard 750mm vertical extrusions and 304mm arms, it should yield a maximum Z over 250mm and diameter slightly over 250mm.  With 1000mm vertical extrusions and 360mm arms, it should yield a build height of over 500mm and diameter up to 300mm.
+* With the standard 750mm vertical extrusions and 304mm arms, it should yield a maximum Z just under 200mm and diameter slightly over 250mm.  With 1000mm vertical extrusions and 360mm arms, it should yield a build height of over 500mm and diameter up to 300mm.
 
 Here is the GoogleDocs spreadsheet containing the [Bill of Materials](https://docs.google.com/spreadsheets/d/1ovnhxit7gjctnHXA3ArEihpogoxfmhG4zKcSKq6PfBs/edit?usp=sharing). 
 Here is a list of the fasteners required and where they are used: [Fasteners](https://docs.google.com/spreadsheets/d/1ovnhxit7gjctnHXA3ArEihpogoxfmhG4zKcSKq6PfBs/edit#gid=828928504)
 
-Note: this is a *Work-in-Progress*, but I plan to have the prototype finalized by the end of April 2017, so it is ready for the start of the summer class in June 2017.
-So far the parts have arrived and I've assembled the frame.
+Note: this is a *Work-in-Progress*, but I plan to have the prototype finalized by May 15th 2017, so it is ready for the start of the summer class in June 2017.
+So far the parts have arrived and I've assembled the frame, done about half of the wiring, and tested the motion.
 At this point it is safe to print all of the parts which have been published, because I've tested them.
-Next I'll wire up the electronics and install the bed and hotend.
+I expect to finish with the wiring on Sunday, May 14th.
 
 This isn't an average printer, this is an **extraordinary** one.
 
