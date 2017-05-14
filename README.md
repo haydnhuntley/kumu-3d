@@ -15,7 +15,7 @@ The Kumu-3D's features are:
 * 24v power supply, to give the motors twice as much power for faster acceleration and more precise positioning.
 * E3D hotend.
 * 32-bit Smoothieware controller from AZSMZ, with LCD display.
-* Carbon fiber, zero-backlash magnetically jointed arms.
+* Carbon fiber, magnetic, zero-backlash arms.
 * 0.9&deg; motors, 1/32 stepping, 16-tooth pulleys yield 400 steps/mm with a worst case real world resolution of 20&micro;m and an average resolution of about one-third of that.
 * Dampers for near silent operation.
 * 2020 extrusions with diagonal bracing for increased stiffness.
@@ -27,11 +27,11 @@ Here is the GoogleDocs spreadsheet containing the [Bill of Materials](https://do
 Here is a list of the fasteners required and where they are used: [Fasteners](https://docs.google.com/spreadsheets/d/1ovnhxit7gjctnHXA3ArEihpogoxfmhG4zKcSKq6PfBs/edit#gid=828928504)
 
 Note: this is a *Work-in-Progress*, but I plan to have the prototype finalized by May 15th 2017, so it is ready for the start of the summer class in June 2017.
-So far the parts have arrived and I've assembled the frame, done about half of the wiring, and tested the motion.
+So far the parts have arrived and I've assembled the frame, done the first half of the wiring, and tested the motion.
 At this point it is safe to print all of the parts which have been published, because I've tested them.
 I expect to finish with the wiring on Sunday, May 14th.
 
-This isn't an average printer, this is an **extraordinary** one.
+This isn't an average printer, it is an **extraordinary** one.
 
 I am creating this project for students at Maui College and hope it is useful to enthusiasts everywhere!  :-)
 
