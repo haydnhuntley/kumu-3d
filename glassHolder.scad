@@ -1,7 +1,7 @@
 // This is a glass holder for a 300mm diameter piece, with space for a
 // silicone heating pad underneath it.  It secures to 2020 extrusions.
 //
-// With 5mm glass, it should work with M5x15 screws.
+// With 5mm glass, it should work with M5x20 screws.
 // I get my 300mm glass (and 250mm 12v or 24v silicone heaters)
 // from RobotDigg.com
 // Three of these pieces are used with a 300mm diameter round glass in my
@@ -18,7 +18,7 @@ include <configuration.scad>;
 debug = false;
 glassRadius  = 300/2;
 glassHeight  = 5.0;
-spacerHeight = 3.0;
+spacerHeight = 8.0;
 
 // All measurements in mm.
 extraHeight  = 2.00;
@@ -44,17 +44,17 @@ difference()
 
 	if (debug)
 	{
-		// Show the M5x15 screw.
+		// Show the M5x20 screw.
 		translate([0, 0, 7])
 		rotate([180, 0, 0])
-%		cylinder(r=5/2, h=15);
+%		cylinder(r=5/2, h=20);
 
 		// Show how far the screw needs to extend.
 		rotate([180, 0, 0])
 #		cylinder(r=5/2, h=5+spacerHeight);
 	}
 
-	// Make a hole for the M5x15 bolt.
+	// Make a hole for the M5x20 bolt.
 	translate([0, 0, -smidge/2])
 	cylinder(r=m5LooseRadius, h=height+smidge);
 
@@ -72,7 +72,7 @@ difference()
 	// The body.
 	cylinder(r=extrusionWidth/2, h=spacerHeight);
 
-	// Make a hole for the M5x12 screw.
+	// Make a hole for the M5x20 screw.
 	translate([0, 0, -smidge/2])
 	cylinder(r=m5LooseRadius, h=spacerHeight+smidge);
 }
