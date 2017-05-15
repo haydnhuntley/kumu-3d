@@ -21,12 +21,12 @@ The Kumu-3D's features are:
 * 2020 extrusions with diagonal bracing for increased stiffness.
 * Integrated spool holder with bearings on top.
 * Build cost around $600 in quantity one, including US shipping.
-* With the standard 750mm vertical extrusions and 304mm arms, it should yield a maximum Z just under 200mm and diameter slightly over 250mm.  With 1000mm vertical extrusions and 360mm arms, it should yield a build height of over 500mm and diameter up to 300mm.
+* With the standard 750mm vertical extrusions and 304mm arms, it yields a maximum Z of 290mm and maximum diameter of 260mm.  With 1000mm vertical extrusions and 360mm arms, it should yield a build height of over 500mm and diameter up to 300mm.
 
 Here is the GoogleDocs spreadsheet containing the [Bill of Materials](https://docs.google.com/spreadsheets/d/1ovnhxit7gjctnHXA3ArEihpogoxfmhG4zKcSKq6PfBs/edit?usp=sharing). 
 Here is a list of the fasteners required and where they are used: [Fasteners](https://docs.google.com/spreadsheets/d/1ovnhxit7gjctnHXA3ArEihpogoxfmhG4zKcSKq6PfBs/edit#gid=828928504)
 
-Note: this is no longer a *Work-in-Progress* -- the first Kumu-3D has been built and is printing, and three more are on the way!  Now I can begin documenting the build process on the second one.
+Note: this is no longer a *Work-in-Progress* -- the first Kumu-3D has been built and is printing, and three more are on the way!  Now I can begin documenting the build process while building my second one.
 
 This isn't an average printer, it is an **extraordinary** one.
 
