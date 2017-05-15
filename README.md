@@ -26,10 +26,7 @@ The Kumu-3D's features are:
 Here is the GoogleDocs spreadsheet containing the [Bill of Materials](https://docs.google.com/spreadsheets/d/1ovnhxit7gjctnHXA3ArEihpogoxfmhG4zKcSKq6PfBs/edit?usp=sharing). 
 Here is a list of the fasteners required and where they are used: [Fasteners](https://docs.google.com/spreadsheets/d/1ovnhxit7gjctnHXA3ArEihpogoxfmhG4zKcSKq6PfBs/edit#gid=828928504)
 
-Note: this is a *Work-in-Progress*, but I plan to have the prototype finalized by May 15th 2017, so it is ready for the start of the summer class in June 2017.
-So far the parts have arrived and I've assembled the frame, done the first half of the wiring, and tested the motion.
-At this point it is safe to print all of the parts which have been published, because I've tested them.
-I expect to finish with the wiring on Sunday, May 14th.
+Note: this is no longer a *Work-in-Progress* -- the first Kumu-3D has been built and is printing, and three more are on the way!  Now I can begin documenting the build process on the second one.
 
 This isn't an average printer, it is an **extraordinary** one.
 
