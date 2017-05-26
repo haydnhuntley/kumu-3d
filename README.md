@@ -44,10 +44,12 @@ Here are some photos of Kumu-3D#1:
 ![Kumu-3D Corner](images/Kumu-3D-corner.jpeg "Kumu-3D Corner")
 ![Kumu-3D Top   ](images/Kumu-3D-top.jpeg    "Kumu-3D Top")
 
-Here are some photos of a 3DBenchy torture test printed at 60mm/sec:
+Here are some photos of a 3DBenchy torture test printed in PLA at 60mm/sec:
 ![3DBenchy Left ](images/3DBenchy-left.jpeg  "3DBenchy Left")
 ![3DBenchy Right](images/3DBenchy-right.jpeg "3DBenchy Right")
 ![3DBenchy Angle](images/3DBenchy-angle.jpeg "3DBenchy Angle")
+There is a little bit of very fine stringing, so I'll need to increase the retraction or lower the temperature.
+Note how nicely it handled the overhangs.
 
 <!---
 Some useful links for Markdown language:
