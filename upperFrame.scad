@@ -1,4 +1,4 @@
-// This upper frame works with 2020 extrusions.
+// This upper frame works with 2020 extrusions and 6mm wide belts.
 //
 // This work is licensed under a Creative Commons Attribution-ShareAlike 4.0
 // International License.
@@ -7,7 +7,7 @@
 // Haydn Huntley
 // haydn.huntley@gmail.com
 
-// 30% infill is sufficient.
+// 30% hexagonal infill with a 0.5mm nozzle is plenty strong enough.
 
 $fn = 360/24;
 

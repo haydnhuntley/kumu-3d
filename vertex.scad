@@ -14,6 +14,7 @@ include <configuration.scad>;
 extraClearance         =   0.3;
 grooveRadius           =   0.7;
 crossPieceOffset       = -43;
+layerHeight            = 0.2;
 
 
 function fnX(d, offset=0) = d * sin(30) - offset;
@@ -48,7 +49,20 @@ module vertex(height)
 				   -(extrusionWidth+extraClearance)/2, -smidge/2])
 		cube([extrusionWidth+extraClearance,
 			  extrusionWidth+extraClearance, height+smidge]);
-		
+
+		// At the bottoms of the vertical 2020 extrusions, widen out the
+		// square hole slightly to account for the first layer squishing
+		// inward.
+		for (i = [0:4])
+		{
+			size = extrusionWidth+extraClearance+(4-i)*nozzleWidth/3;
+			rotate([0, 0, 45])
+			translate([-size/2,
+					   -size/2,
+					   i*layerHeight-smidge/2])
+			cube([size, size, layerHeight+smidge]);
+		}
+			  
 		// Remove four vertical grooves to make the inside corners sharp.
 		for (a = [1:4])
 			rotate([0, 0, 45+a*90])
