@@ -9,7 +9,9 @@ include $(wildcard *.deps)
 
 all: lowerFrame.stl              \
 	 upperFrame.stl              \
+	 upperFrame9mm.stl           \
 	 carriage.stl				 \
+	 carriageOutside.stl         \
 	 glassHolder.stl			 \
 	 azsmzPlate.stl			     \
 	 smoothieboardPlate.stl		 \
@@ -19,7 +21,12 @@ all: lowerFrame.stl              \
 	 copperPipeBearingHolder.stl \
 	 copperPipeSpoolHolder.stl   \
      powerSupplyHolders.stl      \
-	 e3dWedge.stl
+	 e3dWedge.stl                \
+     beltLocks9mm.stl
+
+lowerFrame.stl: vertex.scad
+upperFrame.stl: vertex.scad
+upperFrame9.stl: vertex.scad
 
 .PHONY: clean
 
