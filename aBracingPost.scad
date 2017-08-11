@@ -37,7 +37,7 @@ module diagonalBracingPost()
 		// Remove a tapering hole for an M3x10 to M3x16 screw in the post.
 		translate([0, 0, -smidge/2])
 		cylinder(r2=m3LooseRadius-smidge,
-				 r1=m3Radius-smidge,
+				 r1=m3Radius-3*smidge,
 				 h=2*postRadius+zBase+smidge);
 
 		// Remove the two M5x8 holes in the base.
