@@ -21,6 +21,7 @@ m3NutRadius       = (6.25 + 0.75) / 2;
 m3LooseNutRadius  = (m3NutRadius + 0.1);
 m3TightNutRadius  = (m3NutRadius - 0.1);
 m3NutHeight		  = 2.4;
+m3NylockNutHeight = 4.0;
 m3LooseNutHeight  = 2.4+0.2;
 nozzleWidth		  = 0.5;
 extrusionWidth    = 20.0;
@@ -36,6 +37,7 @@ m5LowProfileHeadHeight = 1.5 + 0.5;
 m5x8Height        = 8;        // For M5x8
 m5LooseNutRadius  = (8.9 + 0.4) / 2;
 m5NutHeight       = (4.9 + 0.3);
-
+m4LooseNutRadius  = (8.0 + 0.3) / 2;
+m4NutHeight       = (3.2 + 0.3);
 
 lowerFrameHeight = 3 * extrusionWidth + 12;
