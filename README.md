@@ -19,6 +19,8 @@ The Kumu-3D's features are:
 * 0.9&deg; motors, 1/32 stepping, 16-tooth pulleys yield 400 steps/mm with a worst case real world resolution of 20&micro;m and an average resolution of about one-third of that.
 * Dampers for near silent operation.
 * 2020 extrusions with diagonal bracing for increased stiffness.
+* flying extruder for better retraction performance.
+* optional 9mm GT2 belts for increased precision.
 * Integrated spool holder with bearings on top.
 * Build cost around $600 in quantity one, including US shipping.
 * With the standard 750mm vertical extrusions and 304mm arms, it yields a maximum Z of 290mm and maximum diameter of 260mm.  With 1000mm vertical extrusions and 360mm arms, it should yield a build height of over 500mm and diameter up to 300mm.
