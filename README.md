@@ -28,7 +28,7 @@ The Kumu-3D's features are:
 Here is the GoogleDocs spreadsheet containing the [Bill of Materials](https://docs.google.com/spreadsheets/d/1ovnhxit7gjctnHXA3ArEihpogoxfmhG4zKcSKq6PfBs/edit?usp=sharing). 
 Here is a list of the fasteners required and where they are used: [Fasteners](https://docs.google.com/spreadsheets/d/1ovnhxit7gjctnHXA3ArEihpogoxfmhG4zKcSKq6PfBs/edit#gid=828928504)
 
-Note: this is no longer a *Work-in-Progress* -- the first Kumu-3D has been built and is printing, and three more are on the way!  Now I can begin documenting the build process while building my second one.
+Note: this is no longer a *Work-in-Progress* -- the first six Kumu-3D's have been built and are printing, and four more are on the way!  I'm in the process of writing up how to build them, which is at:  [Documentation] (https://docs.google.com/document/d/1tWf-NENtzvH9kXuD4_r2AeAENZi3MvYkmVscPsnDQXc/edit?usp=sharing)
 
 This isn't an average printer, it is an **extraordinary** one.
 
