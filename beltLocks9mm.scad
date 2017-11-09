@@ -16,9 +16,9 @@ actualBeltWidth       = 9;
 beltWidth             = actualBeltWidth + 1.0;
 singleBeltThickness   = 1.5;
 doubleBeltThickness   = 2.5+0.8;
-beltLockHeight        = 4;
-m3BeltLockOffset      = 4.65;
-rBeltLock             = 4.4;
+beltLockHeight        = 2*m3NutHeight;
+m3BeltLockOffset      = 4.5;
+rBeltLock             = 4.6;
 
 
 module upperBeltLock()
@@ -50,9 +50,12 @@ module upperBeltLock()
 						 h=beltLockHeight+smidge);
 
 				// M3 nut traps.
-				translate([0, 0, beltLockHeight-m3NutHeight/2])
+				translate([0, 0, beltLockHeight-m3NutHeight])
 				rotate([0, 0, 30])
-				cylinder(r=m3NutRadius, h=m3NutHeight+smidge, $fn=6);
+				cylinder(r1=m3TightNutRadius-smidge,
+						 r2=m3NutRadius,
+						 h=m3NutHeight+smidge,
+						 $fn=6);
 			}
 	}
 }
