@@ -18,21 +18,19 @@
 //
 // Per carriage, you'll need:
 // 3  of the above V- or W-wheels.
-// 2  of the above 1/4" spacers (or you could use 6mm).
-// 1  of the above 1/4" eccentric spacers (or you could use 6mm).
-// 3  M5x35 bolts.
-// 1  large M5 washer for the top side of the eccentric spacer (optional).
+// 4  of the above 1/4" spacers (or you could use 6mm).
+// 2  of the above 1/4" eccentric spacers (or you could use 6mm).
+// 3  M5x50 bolts.
 // 3  M5 nylock nuts to secure the three axles.
 // 2  3/8" ball studs.
 // 2  M3 nylock nuts to secure the ball studs.
 // 2  M3x35 SHCS for the tightener.
 // 2  M3 nuts for the tightener.
-// 1  M3x20 SHCS for the vertical post for the upper G2 belt attachment.
+// 1  M3x35 SHCS for the vertical post for the upper G2 belt attachment.
 // 1  M3 nut to secure the vertical post.
 //
 // Haydn Huntley
 // haydn.huntley@gmail.com
-
 
 $fn = 360/4;
 
@@ -41,7 +39,6 @@ include <roundedBox.scad>;
 
 
 // All measurements in mm.
-m5Radius              = (5.0 + 0.3) / 2;
 eccentricSpacerRadius = (7.1 + 0.3)/2;
 ballJointSeparation   = 48.0;
 xAxleSpacing          = extrusionWidth * sqrt(2) + 19.1 - 0.35;
@@ -56,9 +53,9 @@ actualBeltWidth       = 6;
 beltWidth             = actualBeltWidth + 1.0;
 singleBeltThickness   = 1.5;
 doubleBeltThickness   = 2.5+0.8;
-beltLockHeight        = 4;
-m3BeltLockOffset      = 4.65;
-rBeltLock             = 4.4;
+beltLockHeight        = 2*m3NutHeight;
+m3BeltLockOffset      = 4.5;
+rBeltLock             = 4.6;
 debug = true;
 
 wheelWidth                     = 11.0;
@@ -66,7 +63,7 @@ gapBetweenCarriageAndExtrusion =  2;
 gapBetweenBeltAndExtrusion     = 17;
 aluminumSpacerRadius           = 10.0/2;
 aluminumSpacerHeight           = 0.25 * mmPerInch;
-spacerHeight = extrusionWidth * sin(45) + gapBetweenCarriageAndExtrusion - wheelWidth/2 - aluminumSpacerHeight - 2.0;
+spacerHeight = extrusionWidth * sin(45) + gapBetweenCarriageAndExtrusion - wheelWidth/2 - aluminumSpacerHeight - 1.0;
 
 
 module carriage()
@@ -117,19 +114,19 @@ module carriage()
 					20,
 					zBody+smidge], 5, true);
 
-		// Three holes for the M5x35 bolts for the axles for the rollers.
+		// Three holes for the M5x50 bolts for the axles for the rollers.
 		// Upper right.
 		translate([xAxleSpacing/2, yAxleSpacing/2, -smidge/2])
-		m5x40(zBody+smidge);
+		m5x50(zBody+smidge);
 
 		// Lower right.
 		translate([xAxleSpacing/2, -yAxleSpacing/2, -smidge/2])
-		m5x40(zBody+smidge);
+		m5x50(zBody+smidge);
 
 		// Left, with room for the eccentric spacer.
 		translate([-xAxleSpacing/2, 0, -smidge/2])
 		{
-			m5x40(zBody+smidge);
+			m5x50(zBody+smidge);
 			cylinder(r=eccentricSpacerRadius, h=zBody+smidge);
 		}
 
@@ -157,7 +154,7 @@ module carriage()
 }
 
 
-module m5x40(h=0)
+module m5x50(h=0)
 {
 	cylinder(r=m5Radius, h=h);
 }
@@ -234,9 +231,12 @@ module upperBeltLock()
 						 h=beltLockHeight+smidge);
 
 				// M3 nut traps.
-				translate([0, 0, beltLockHeight-m3NutHeight/2])
+				translate([0, 0, beltLockHeight-m3NutHeight])
 				rotate([0, 0, 30])
-				cylinder(r=m3NutRadius, h=m3NutHeight+smidge, $fn=6);
+				cylinder(r1=m3TightNutRadius-smidge,
+						 r2=m3NutRadius,
+						 h=m3NutHeight+smidge,
+						 $fn=6);
 			}
 	}
 }

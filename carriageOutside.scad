@@ -50,26 +50,26 @@ module outsideCarriage()
 		translate([0, 0, zBody/2])
 		roundedBox([xBody-4*7, yBody-3*7, zBody+smidge], 5, true);
 
-		// Three holes for the M5x35 bolts for the axles for the rollers.
+		// Three holes for the M5x50 bolts for the axles for the rollers.
 		// Upper right.
 		translate([xAxleSpacing/2, yAxleSpacing/2, -smidge/2])
-		m5x40(zBody+smidge);
+		m5x50(zBody+smidge);
 
 		// Lower right.
 		translate([xAxleSpacing/2, -yAxleSpacing/2, -smidge/2])
-		m5x40(zBody+smidge);
+		m5x50(zBody+smidge);
 
 		// Left, with room for the eccentric spacer.
 		translate([-xAxleSpacing/2, 0, -smidge/2])
 		{
-			m5x40(zBody+smidge);
+			m5x50(zBody+smidge);
 			cylinder(r=eccentricSpacerRadius, h=zBody+smidge);
 		}
 	}
 }
 
 
-module m5x40(h=0)
+module m5x50(h=0)
 {
 	cylinder(r=m5Radius, h=h);
 }
