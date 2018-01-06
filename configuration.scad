@@ -14,6 +14,7 @@ smidge            = 0.1;
 mmPerInch         = 25.4;
 m3Radius          = (3.0 + 0.2) / 2;
 m3LooseRadius     = m3Radius + 0.2;
+m3TightRadius     = m3Radius - 0.2;
 m3HeadHeight      = 3.0 + 0.2;
 m3HeadRadius      = (5.4 + 0.2) / 2;
 m3LooseHeadRadius = m3HeadRadius + 0.2;
