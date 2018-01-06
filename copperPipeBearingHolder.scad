@@ -1,4 +1,4 @@
-// This works with a piece of 1/2" copper pipe, to provide nearly friction free
+// This works with a piece of 1/2" copper pipe, to provide low friction
 // bearings for the spool.
 //
 // Uses 2 flanged 623ZZ bearings.
@@ -44,9 +44,9 @@ module flangedBearing623zz()
 		}
 	}
 
-	// Hole for the M3x10 screw to hold the bearing.
+	// Slightly tapering hole for the M3x10 screw to hold the bearing.
 	translate([0, copperPipeRadius+bearingRadius+radialOffset, -smidge/2])
-	cylinder(r=m3Radius, h=ringZ+bearingZ+smidge);
+	cylinder(r1=m3TightRadius-smidge, r2=m3Radius, h=ringZ+bearingZ+smidge);
 }
 
 
