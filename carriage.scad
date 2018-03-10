@@ -40,7 +40,6 @@ include <roundedBox.scad>;
 
 // All measurements in mm.
 eccentricSpacerRadius = (7.1 + 0.3)/2;
-ballJointSeparation   = 48.0;
 xAxleSpacing          = extrusionWidth * sqrt(2) + 19.1 - 0.35;
 yAxleSpacing          = 30.0;
 xBody                 = max(xAxleSpacing + 2 * 7, ballJointSeparation + 2 * 5);
