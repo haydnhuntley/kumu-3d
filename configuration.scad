@@ -41,4 +41,5 @@ m5NutHeight       = (4.9 + 0.3);
 m4LooseNutRadius  = (8.0 + 0.3) / 2;
 m4NutHeight       = (3.2 + 0.3);
 
-lowerFrameHeight = 3 * extrusionWidth + 12;
+lowerFrameHeight    = 3 * extrusionWidth + 12;
+ballJointSeparation = 48.0;
