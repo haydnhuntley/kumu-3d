@@ -43,7 +43,7 @@ rubberTubingID     = 0.25*mmPerInch + 5*smidge;
 module motorRing()
 {
 	xyScale            = (nema17Width+2*motorRingThickness) / nema17Width;
-	motorWingSize      = 10.7-m3NutRadius;
+	motorWingSize      = 10.7-m3NutRadius+1;
 	motorWingThickness = 4*motorRingThickness;
 	
 	difference()
@@ -55,11 +55,17 @@ module motorRing()
 			motorRingHelper();
 
 			// Add the wings for the M3 bolts to secure it.
-			translate([0, 0, zMotorRing/2])
-			rotate([90, 0, 0])
-			roundedBox([nema17Width*xyScale+2*motorWingSize,
-						zMotorRing,
-						motorWingThickness], zMotorRing/2, true);
+			hull()
+			{
+				translate([0, 0, zMotorRing/2])
+				rotate([90, 0, 0])
+				roundedBox([nema17Width*xyScale+2*motorWingSize,
+							zMotorRing,
+							motorWingThickness], zMotorRing/2, true);
+
+				scale([xyScale, xyScale, 1])
+				motorRingHelper();
+			}
 
 			// Add extra material to thicken the top where the
 			// M3 bolt to suspend it will be.
@@ -89,17 +95,27 @@ module motorRing()
 					   zMotorRing/2])
 			rotate([90, 0, 0])
 			{
+				// M3 SHCS head.
+				translate([0, 0, -6])
+				rotate([0, 0, 30])
+				rotate([0, 180, 0])
+				cylinder(r1=m3LooseHeadRadius,
+						 r2=m3LooseHeadRadius+4*smidge,
+						 h=motorWingThickness*0.75,
+						 center=false,
+						 $fn=24);
+				// M3 shaft.
 				cylinder(r=m3LooseRadius,
-						 h=motorWingThickness+smidge,
+						 h=2*motorWingThickness,
 						 center=true,
 						 $fn=24);
 				// Make room for an M3 nut trap.
-				translate([0, 0, 5])
+				translate([0, 0, 6])
 				rotate([0, 0, 30])
 				cylinder(r1=m3TightNutRadius,
-						 r2=m3LooseNutRadius,
-						 h=m3NutHeight,
-						 center=true,
+						 r2=m3LooseNutRadius+4*smidge,
+						 h=motorWingThickness*0.75,
+						 center=false,
 						 $fn=6);
 			}
 
