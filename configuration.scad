@@ -29,6 +29,7 @@ extrusionWidth    = 20.0;
 copperPipeRadius  = 16.0/2 - smidge;
 m5Radius          = (5.0 + 0.2) / 2;
 m5LooseRadius     = m5Radius + 0.2;
+m5TightRadius     = m5Radius - 0.2;
 m5HeadHeight      = 5.6;		// For M5 SHCS
 m5LooseHeadRadius = 8.6 / 2;	// For M5 SHCS
 m5ButtonHeadRadius     = (9.5 + 0.3) / 2;  // For M5 button head
@@ -37,7 +38,8 @@ m5LowProfileHeadRadius = (9.5 + 0.3) / 2;  // For M5 low profile
 m5LowProfileHeadHeight = 1.5 + 0.5;
 m5x8Height        = 8;        // For M5x8
 m5LooseNutRadius  = (8.9 + 0.4) / 2;
-m5NutHeight       = (4.9 + 0.3);
+m5PlainNutHeight  = (3.8 + 0.2);
+m5LockNutHeight   = (4.9 + 0.3);
 m4LooseNutRadius  = (8.0 + 0.3) / 2;
 m4NutHeight       = (3.2 + 0.3);
 
