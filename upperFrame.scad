@@ -94,7 +94,7 @@ module upperFrame()
 		translate([0, crossPieceOffset-7, height/2])
 		rotate([90, 0, 0])
 		rotate([180, 0, 0])
-		cylinder(r1=m3LooseRadius, r2=m3Radius-0.2, h=35+1, $fn=36);
+		cylinder(r1=m3LooseRadius, r2=m3TightRadius, h=35+1, $fn=36);
 	}
 
 	// Add a piece to hold a microswitch.
