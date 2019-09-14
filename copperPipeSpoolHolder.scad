@@ -18,9 +18,10 @@ include <configuration.scad>;
 
 // All measurements in mm.
 debug              = false;
-baseHeight         = 2.5;
+baseHeight         = 3.0;
 minWallWidth       = 2.0;
-size               = 2.4 * copperPipeRadius;
+size               = 2.5 * copperPipeRadius;
+extraHeight        = 42;
 keyWidth           = 6.5;
 keyDepth           = 2.4;
 keyLength          = 0.6 * size;
@@ -40,10 +41,11 @@ module spoolHolder(angle)
 				// Intersect a cone with a rectangle for the body.
 				scale([1, 1.25, 1])
 				cylinder(r1=size,
-						 r2=(1+lCopperPipeRadius+baseHeight)/1.25, h=size);
+						 r2=(1+lCopperPipeRadius+baseHeight)/1.25,
+						 h=size+extraHeight);
 			
 				translate([-extrusionWidth/2, -size, 0])
-				cube([extrusionWidth, 2*size, size-minWallWidth]);
+				cube([extrusionWidth, 2*size, size-minWallWidth+extraHeight]);
 			}
 			
 			// Add two trapezoids as keys on the bottom.
@@ -66,7 +68,8 @@ module spoolHolder(angle)
 		color("red")
 		translate([6, signAngle * 3, 0])
 		rotate([0, 0, angle])
-		translate([0, 0, lCopperPipeRadius+m5ButtonHeadHeight+baseHeight])
+		translate([0, 0,
+		          lCopperPipeRadius+m5ButtonHeadHeight+baseHeight+extraHeight])
 		rotate([0, 90, 0])
 		union()
 		{
@@ -81,12 +84,21 @@ module spoolHolder(angle)
 		// Remove the screw hole.
 		color("green")
 		translate([0, 0, -smidge])
-		cylinder(r=m5LooseRadius+smidge, h=baseHeight+m5HeadHeight);
+		scale([1.2, 1, 1])
+		cylinder(r=m5LooseRadius+smidge, h=baseHeight+1);
  
-		// Remove the screw head.
+		// Remove the screw head and access to it.
 		color("green")
-		translate([0, 0, baseHeight])
-		cylinder(r=m5ButtonHeadRadius, h=2*m5HeadHeight);
+		hull()
+		{
+			translate([0, 0, baseHeight])
+			scale([1.2, 1, 1])
+			cylinder(r=m5ButtonHeadRadius, h=smidge);
+			
+			translate([-20, 0, baseHeight+20+extraHeight])
+			scale([1.2, 1, 1])
+			cylinder(r=m5ButtonHeadRadius, h=smidge);
+		}
 	}
 }
 
@@ -103,7 +115,7 @@ else
 	translate([extrusionWidth/2, 0, 0])
 	spoolHolder(30);
 
-	translate([2*extrusionWidth, 0, 0])
+	translate([0, 2*extrusionWidth+3, 0])
 	rotate([0, -90, 0])
 	translate([extrusionWidth/2, 0, 0])
 	spoolHolder(-30);
