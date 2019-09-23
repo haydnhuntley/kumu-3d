@@ -7,26 +7,33 @@ include $(wildcard *.deps)
 
 .PHONY: all
 
-all: lowerFrame.stl              \
-	 upperFrame.stl              \
-	 upperFrame9mm.stl           \
-	 carriage.stl				 \
-	 carriageOutside.stl         \
-	 glassHolder.stl			 \
+all: aBracingPost.stl            \
 	 azsmzPlate.stl			     \
-	 smoothieboardPlate.stl		 \
-	 mksSbasePlate.stl			 \
-	 aBracingPost.stl            \
-	 fusePlugHolder.stl			 \
+	 carriage4Outside.stl        \
+	 carriage4.stl				 \
+	 carriageOutside.stl         \
+	 carriage.stl				 \
 	 copperPipeBearingHolder.stl \
 	 copperPipeSpoolHolder.stl   \
-     powerSupplyHolders.stl      \
 	 e3dWedge.stl                \
-     beltLocks9mm.stl
+	 effector.stl                \
+     flyingExtruderSuspender.stl \
+	 fusePlugHolder.stl			 \
+	 glassHolder.stl			 \
+	 keyBakLifter.stl			 \
+	 lowerFrame.stl              \
+     powerSupplyHolders.stl      \
+	 upperFrame.stl              \
+	 upperFrame9mm.stl           \
+     zProbe.stl					 \
+     zProbeVolcano.stl			 \
+	 smoothieboardPlate.stl		 \
+	 mksSbasePlate.stl
+	 
 
-lowerFrame.stl: vertex.scad
-upperFrame.stl: vertex.scad
-upperFrame9.stl: vertex.scad
+lowerFrame.stl:    vertex.scad
+upperFrame.stl:    vertex.scad
+upperFrame9mm.stl: vertex.scad
 
 .PHONY: clean
 
