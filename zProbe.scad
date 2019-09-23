@@ -1,6 +1,11 @@
-// Z-probe for magneticEffector4.
+// Z-probe for the Kumu-3D effector with an E3D-style hotend.
 //
-// Created by Haydn Huntley 01/14/2016.
+// This work is licensed under a Creative Commons Attribution-ShareAlike 4.0
+// International License.
+// Visit:  http://creativecommons.org/licenses/by-sa/4.0/
+//
+// Haydn Huntley
+// haydn.huntley@gmail.com
 
 $fn=360/4;
 
