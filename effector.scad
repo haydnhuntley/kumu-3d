@@ -206,20 +206,6 @@ module effectorOutside()
 			translate([lightRingOutsideDiameter/2, 0, 1])
 			rotate([0, -25, 0])
 			cylinder(r=1.5/2+4*smidge, h=2*baseHeight+2, $fn=16);
-
-		// For the Tim Jacobsen's string and springs system to be tied
-		// around the LED light ring.
-		for (i = [0:sides])
-			for (j = [1, -1])
-				rotate([0, 0, i * 360/sides])
-				rotate([0, 0, 90])
-				{
-					translate([lightRingAverageRadius, 0, -2])
-					translate([0, 0, baseHeight])
-					rotate([0, j*25, 0])
-					translate([j*-0.6, 0, -baseHeight])
-					cylinder(r=1.5/2+4*smidge, h=2*baseHeight, $fn=16);
-				}
 	}
 }
 
