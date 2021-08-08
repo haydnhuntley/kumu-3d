@@ -13,7 +13,7 @@ The Kumu-3D's features are:
 * 300mm diameter borosilicate build plate, yielding a build area over 250mm in diameter.
 * 250mm diameter 24V 250W silicone heater.
 * 24v power supply, to give the motors twice as much power for faster acceleration and more precise positioning.
-* E3D hotend.
+* E3D-style hotend.
 * 32-bit Smoothieware controller from AZSMZ, with LCD display.
 * Carbon fiber, magnetic, zero-backlash arms.
 * 0.9&deg; motors, 1/32 stepping, 16-tooth pulleys yield 400 steps/mm with a worst case real world resolution of 20&micro;m and an average resolution of about one-third of that.
@@ -32,11 +32,8 @@ Note: this is no longer a *Work-in-Progress* -- nine Kumu-3D's have been built a
 
 This isn't an average printer, it is an **extraordinary** one.
 
-I am creating this project for students at Maui College and hope it is useful to enthusiasts everywhere!  :-)
-
-Here is a link to the extruder (designed by Shane Beeder):  [ArmDrive Bowden Extruder](http://www.thingiverse.com/thing:245677)  
-I use the version for the Mk8 drive gear and the alternative arm which uses a 4mm nut to secure the PTFE tubing.
-Note: print the two arm parts in ABS.
+I've switched to using dual-drive, geared ("BMG" style) extruders. They have triple the torque, and double the filament grip.
+I've been using $15 ones from DotBit, but there are many decent brands: https://www.aliexpress.com/item/4000419512195.html
 
 Here is a link to the AZSMZ's LCD display holder (designed by Rick Yang):  [
 LCD mount for AZSMZ 12864 with TF slot](http://www.thingiverse.com/thing:1610241)
