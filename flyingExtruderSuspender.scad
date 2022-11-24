@@ -35,7 +35,7 @@ include <configuration.scad>;
 include <roundedBox.scad>;
 include <motor.scad>;
 
-zMotorRing         = 10.0;
+zMotorRing         = 12.0;
 motorRingThickness =  3.0;
 rubberTubingID     = 0.25*mmPerInch + 5*smidge;
 	
