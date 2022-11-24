@@ -115,8 +115,8 @@ else
 	translate([extrusionWidth/2, 0, 0])
 	spoolHolder(30);
 
-	translate([0, 2*extrusionWidth+3, 0])
-	rotate([0, -90, 0])
-	translate([extrusionWidth/2, 0, 0])
+	translate([0, 2*extrusionWidth-1, 0])
+	rotate([180, -90, 0])
+	translate([extrusionWidth/2, 0, -(size+extraHeight-minWallWidth)])
 	spoolHolder(-30);
 }
